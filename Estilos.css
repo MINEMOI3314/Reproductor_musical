@@ -33,3 +33,7 @@ body{
 .meta{
     width: 66%;
 }
+
+#Cover_display{
+    width: 600px;
+}
