@@ -17,16 +17,17 @@
                 <button class="name" onclick=bot2()>Aca entre nos</button>
                 <button class="name" onclick=bot3()>Tu falta de querer</button>
                 <button class="name" onclick=bot4()>Fly me to the moon</button>
-                <button class="name">5</button>
-                <button class="name">6</button>
-                <button class="name">7</button>
-                <button class="name">8</button>
-                <button class="name">9</button>
-                <button class="name">10</button>
-                <button class="name">11</button>
-                <button class="name">13</button>
-                <button class="name">14</button>
-                <button class="name">15</button>
+                <button class="name" onclick=bot5()>this is what slow dancing feels like</button>
+                <button class="name" onclick=bot6()>Room</button>
+                <button class="name" onclick=bot7()>7</button>
+                <button class="name" onclick=bot8()>8</button>
+                <button class="name" onclick=bot9()>9</button>
+                <button class="name" onclick=bot10()>10</button>
+                <button class="name" onclick=bot11()>11</button>
+                <button class="name" onclick=bot12()>12</button>
+                <button class="name" onclick=bot13()>13</button>
+                <button class="name" onclick=bot14()>14</button>
+                <button class="name" onclick=bot15()>15</button>
             </header>
         </div>
         <div class="column meta">
@@ -36,10 +37,11 @@
             <audio id="AudioPlay" src="Media\Audio\Música de cafeterías.mp3" autoplay controls>
         </div>
         <div id="BotonesReproduccion">
-            <button onclick=PlayPause()>
+            <!--<input type="range">-->
+            <button onclick=PlayPause() id="PlayPause">
                 <img src="Media/Buttons/PlayPauseSmall.png">
             </button>
-            <button onclick=Stop()>
+            <button onclick=Stop() id="Stop">
                 <img src="Media/Buttons/StopSmall.png">
             </button>
             <button onclick=Shuffle()>
@@ -55,6 +57,7 @@
         </div>
     </div>
 
-<script src="Scrips/metadatos.js"></script>
+
 </body>
+<script src="Scrips/metadatos.js"></script>
 </html>
