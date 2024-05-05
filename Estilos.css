@@ -21,9 +21,8 @@ body{
 }
 
 .column{
-    background-color: #d6d6d6;
+    background:transparent;
     margin: 5px;
-    border: 2px solid #000000;
     float:left;
 }
 .songs{
@@ -38,17 +37,18 @@ body{
     width: 600px;
 }
 
-.BR{
-    width: 100;
-}
 .metaDisplay{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.ControllsButtons{
+    background:transparent;
+}
 .Controlls{
     height: 150px;
     width: 150px;
-    -ms-flex-align:end;
     background: transparent;
     border: none;
+}
+.Controlls:hover{
+    background-color: #fea667;
 }
