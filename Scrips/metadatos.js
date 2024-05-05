@@ -19,7 +19,14 @@ class Reproduccion {
     //funcion que reproducirá y mostrará los metadatos en pantalla
     playThis(){
         console.log(this.nombre);
-        let change = document.getElementById("Cover_display");
+        let change
+        change = document.getElementById("songName");
+        change.textContent = this.nombre;
+        change = document.getElementById("artistName");
+        change.textContent = "De: " + this.artista;
+        change = document.getElementById("año_salida");
+        change.textContent = "Del año: " + this.salida;
+        change = document.getElementById("Cover_display");
         change.src = this.portada;
         change = document.getElementById("AudioPlay");
         change.src = this.audio;
@@ -31,7 +38,7 @@ var cancion = [
     new Reproduccion ("Aca entre nos", "Vicente Fernades", 1992, 3, 16, "Media\\Cover\\Vicente Fernandes - Que raro tiene.jpg", "Media\\Audio\\Vicente Fernández - Acá Entre Nos.mp3"), 
     new Reproduccion ("Tu falta de querer", "Mon laferte", 2015, 4, 38, "Media\\Cover\\Mon Laferte - vol1.jpg", "Media\\Audio\\Mon Laferte - Tu Falta De Querer.mp3"),
     new Reproduccion ("Fly me to the moon", "Franck Sinatra", 1964, 2, 27, "Media\\Cover\\Nothing but the best.jpg", "Media\\Audio\\Franck Sinatra - Fly Me To The Moon.mp3"),
-    new Reproduccion ("this is what slow dancing feels like", "JVKE", 2024, 2, 25, "Media\\Cover\\this is what slow dancing feels like.jpg", "Media\\Audio\\JVKE - this is what slow dancing feels like.mp3"),
+    new Reproduccion ("This is what slow dancing feels like", "JVKE", 2024, 2, 25, "Media\\Cover\\this is what slow dancing feels like.jpg", "Media\\Audio\\JVKE - this is what slow dancing feels like.mp3"),
     new Reproduccion ("Room", "Kevian Kraemer", 2024, 2, 56, "Media\\Cover\\Room.jpg", "Media\\Audio\\Kevian Kraemer - Room.mp3")
 ]
 const sonido = document.getElementById("AudioPlay");

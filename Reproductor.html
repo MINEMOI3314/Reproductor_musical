@@ -17,7 +17,7 @@
                 <button class="name" onclick=bot2()>Aca entre nos</button>
                 <button class="name" onclick=bot3()>Tu falta de querer</button>
                 <button class="name" onclick=bot4()>Fly me to the moon</button>
-                <button class="name" onclick=bot5()>this is what slow dancing feels like</button>
+                <button class="name" onclick=bot5()>This is what slow dancing feels like</button>
                 <button class="name" onclick=bot6()>Room</button>
                 <button class="name" onclick=bot7()>7</button>
                 <button class="name" onclick=bot8()>8</button>
@@ -34,23 +34,28 @@
             <h3>metadatos</h3>
             <!--aqui vamos a meter el formato de los metadatos de las canciones que apareceran cuando le demos click a alguna cancion-->
             <img id="Cover_display" src="Media\Cover\hold.png" alt="Portada del album de la cancion">
-            <audio id="AudioPlay" src="Media\Audio\Música de cafeterías.mp3" autoplay controls>
+            <h2 id="songName" class = "metaDisplay">[Nombre de la cancion]</h2>
+            <h2 id="artistName" class = "metaDisplay">De: [nombre del artista o banda]</h2>
+            <h2 id="año_salida" class = "metaDisplay">Del año: [año de salida]</h2>
+
+
+            <audio id="AudioPlay" src="Media\Audio\Música de cafeterías.mp3" autoplay>
         </div>
         <div id="BotonesReproduccion">
-            <!--<input type="range">-->
-            <button onclick=PlayPause() id="PlayPause">
+            
+            <button onclick=PlayPause() Class="Controlls">
                 <img src="Media/Buttons/PlayPauseSmall.png">
             </button>
-            <button onclick=Stop() id="Stop">
+            <button onclick=Stop() Class="Controlls">
                 <img src="Media/Buttons/StopSmall.png">
             </button>
-            <button onclick=Shuffle()>
+            <button onclick=Shuffle() Class="Controlls">
                 <img src="Media/Buttons/ShuffleSmall.png">
             </button>
-            <button onclick=Prev()>
+            <button onclick=Prev() Class="Controlls">
                 <img src="Media/Buttons/PrevSmall.png">
             </button>
-            <button onclick=Next()>
+            <button onclick=Next() Class="Controlls">
                 <img src="Media/Buttons/NextSmall.png">
             </button>
 
